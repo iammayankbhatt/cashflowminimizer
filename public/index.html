@@ -1,0 +1,38 @@
+// === public/index.html ===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Flow Minimizer</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input, button, select { margin: 5px; padding: 8px; }
+    .expense-item { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Cash Flow Minimizer</h2>
+
+  <div>
+    <input type="text" id="paidBy" placeholder="Paid by (name)" />
+    <input type="number" id="amount" placeholder="Amount" />
+    <input type="text" id="description" placeholder="Description" />
+    <input type="text" id="sharedAmong" placeholder="Shared among (comma separated names)" />
+    <button onclick="addExpense()">Add Expense</button>
+  </div>
+
+  <div>
+    <button onclick="settleUp()">Settle Up</button>
+    <button onclick="resetAll()">Reset</button>
+  </div>
+  
+
+  <h3>Settlement Result:</h3>
+  <ul id="expenseList"></ul>
+
+  <ul id="result"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background: #f7f9fc;
+  }
+  h1 {
+    text-align: center;
+  }
+  #form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  input, button {
+    padding: 8px;
+  }
+  #transactions, #results {
+    max-width: 600px;
+    margin: auto;
+  }
+  
